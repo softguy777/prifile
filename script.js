@@ -57,5 +57,10 @@ function setLanguage(lang) {
 btnEn.addEventListener('click', () => setLanguage('en'));
 btnKo.addEventListener('click', () => setLanguage('ko'));
 
-// Set default language
-setLanguage('ko'); // Set to Korean by default based on the provided resume content
+// Detect browser language and set default
+const userLang = navigator.language || navigator.userLanguage;
+if (userLang.startsWith('ko')) {
+  setLanguage('ko');
+} else {
+  setLanguage('en');
+}
