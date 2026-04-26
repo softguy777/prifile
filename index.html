@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaihyuk LEE | AI & Network Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-onyx text-slate font-sans antialiased selection:bg-teal-300 selection:text-teal-900 leading-relaxed">
+  <div id="cursor-glow"></div>
+
+  <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div class="lg:flex lg:justify-between lg:gap-4">
+      
+      <!-- Left Fixed Header -->
+      <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+        <div>
+          <div class="lang-toggle mb-8">
+            <button id="btn-en" class="active">EN</button>
+            <span>/</span>
+            <button id="btn-ko">KO</button>
+          </div>
+          
+          <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <span data-en="Jaihyuk LEE" data-ko="이재혁">이재혁</span>
+          </h1>
+          <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+            <span data-en="AI & Network Architect" data-ko="AI & Network Architect">AI & Network Architect</span>
+          </h2>
+          <p class="mt-4 max-w-xs leading-normal">
+            <span data-en="From manipulating raw network packets to architecting kernels and backends that withstand tens of millions of connections. Now, I am orchestrating the fusion of this massive-scale system engineering with applied AI." data-ko="네트워크 패킷을 다루고, 수천만 동시 접속을 견디는 커널과 백엔드를 설계해 왔습니다. 이제 이 거대한 스케일의 하드코어 시스템 엔지니어링을 AI와 융합해 나가고 있습니다.">네트워크 패킷을 다루고, 수천만 동시 접속을 견디는 커널과 백엔드를 설계해 왔습니다. 이제 이 거대한 스케일의 하드코어 시스템 엔지니어링을 AI와 융합해 나가고 있습니다.</span>
+          </p>
+
+          <nav class="nav hidden lg:block" aria-label="In-page jump links">
+            <ul class="mt-16 w-max">
+              <li><a class="group flex items-center py-3 active" href="#about"><span class="nav-indicator"></span><span class="nav-text"><span data-en="About" data-ko="소개">About</span></span></a></li>
+              <li><a class="group flex items-center py-3" href="#projects"><span class="nav-indicator"></span><span class="nav-text"><span data-en="Projects" data-ko="프로젝트">Projects</span></span></a></li>
+              <li><a class="group flex items-center py-3" href="#experience"><span class="nav-indicator"></span><span class="nav-text"><span data-en="Experience" data-ko="주요 경력">Experience</span></span></a></li>
+              <li><a class="group flex items-center py-3" href="#education"><span class="nav-indicator"></span><span class="nav-text"><span data-en="Education" data-ko="학력">Education</span></span></a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="mt-8 flex flex-col gap-4">
+          <ul class="ml-1 flex items-center bg-transparent" aria-label="Location">
+            <li class="mr-5 text-sm text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </li>
+            <li class="mr-5 text-sm text-slate-400">
+              <span data-en="Daejeon, South Korea" data-ko="대전, 대한민국">Daejeon, South Korea</span>
+            </li>
+          </ul>
+          <ul class="ml-1 flex items-center bg-transparent" aria-label="Social media">
+            <li class="mr-5 text-sm text-slate-400">
+              <a class="block hover:text-white transition-colors" href="mailto:softguy@gmail.com" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </li>
+            <li class="mr-5 text-sm text-slate-400">
+              <span data-en="softguy@gmail.com" data-ko="softguy@gmail.com">softguy@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Right Scrolling Content -->
+      <main class="pt-24 lg:w-1/2 lg:py-24">
+        
+        <!-- About Section -->
+        <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-onyx/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200"><span data-en="About" data-ko="소개">About</span></h2>
+          </div>
+          <div class="content-text space-y-4 text-slate-400">
+            <p>
+              <span data-en="For over 20 years, I have led massive-scale network infrastructure projects and IT ventures. As global communications evolve, traffic has become heavily encrypted, leading to a rapid loss of network visibility. I firmly believe that AI is the only key to restoring this lost visibility and understanding the context beyond encrypted packets. I am currently applying these insights to build advanced AI-DPI systems with tangible results." data-ko="20년 이상 대규모 네트워크 인프라 비즈니스와 핵심 개발 프로젝트를 지휘해 왔습니다. 시간이 지날수록 전 세계의 모든 네트워크 트래픽은 강력하게 암호화되고 있으며, 이로 인해 인프라의 가시성(Visibility)은 급격히 상실되고 있습니다. 저는 잃어버린 가시성을 복원하고 암호화된 패킷 너머의 맥락을 읽어낼 수 있는 유일한 열쇠가 'AI'라고 확신하며, 이를 심층 패킷 분석(AI-DPI) 등에 적용하여 유의미한 결과물들을 도출하고 있습니다.">20년 이상 대규모 네트워크 인프라 비즈니스와 핵심 개발 프로젝트를 지휘해 왔습니다. 시간이 지날수록 전 세계의 모든 네트워크 트래픽은 강력하게 암호화되고 있으며, 이로 인해 인프라의 가시성(Visibility)은 급격히 상실되고 있습니다. 저는 잃어버린 가시성을 복원하고 암호화된 패킷 너머의 맥락을 읽어낼 수 있는 유일한 열쇠가 'AI'라고 확신하며, 이를 심층 패킷 분석(AI-DPI) 등에 적용하여 유의미한 결과물들을 도출하고 있습니다.</span>
+            </p>
+            <p>
+              <span data-en="Beyond infrastructure, I find pure engineering joy in pushing the limits of the latest AI technologies and developing practical applications—such as zero-latency RAG and STT/TTS pipelines—that solve real-world problems." data-ko="최신 AI 기술의 한계를 테스트하고, 이를 네트워크 분야뿐만 아니라 실생활의 문제를 해결하는 다양한 애플리케이션(RAG, STT/TTS)으로 직접 구현해 내는 과정에서 엔지니어로서의 깊은 즐거움을 느낍니다.">최신 AI 기술의 한계를 테스트하고, 이를 네트워크 분야뿐만 아니라 실생활의 문제를 해결하는 다양한 애플리케이션(RAG, STT/TTS)으로 직접 구현해 내는 과정에서 엔지니어로서의 깊은 즐거움을 느낍니다.</span>
+            </p>
+            
+            <div class="mt-8">
+              <h3 class="text-sm font-bold uppercase tracking-widest text-slate-200 mb-4"><span data-en="Core Tech Stack" data-ko="핵심 기술 스택">Core Tech Stack</span></h3>
+              <ul class="flex flex-wrap gap-2 text-sm">
+                <li class="flex items-center rounded-full bg-slate-800/50 border border-slate-700 px-3 py-1 text-slate-300">
+                  <span class="font-medium mr-2 text-slate-400">Kernel/Sys:</span> Linux, C/C++
+                </li>
+                <li class="flex items-center rounded-full bg-slate-800/50 border border-slate-700 px-3 py-1 text-slate-300">
+                  <span class="font-medium mr-2 text-slate-400">Backend/AI:</span> Go, Python
+                </li>
+                <li class="flex items-center rounded-full bg-slate-800/50 border border-slate-700 px-3 py-1 text-slate-300">
+                  <span class="font-medium mr-2 text-slate-400">Frontend:</span> React, Vue.js
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent Projects Section -->
+        <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-onyx/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200"><span data-en="Projects" data-ko="프로젝트">Projects</span></h2>
+          </div>
+          <div>
+            <ul class="group/list">
+              <!-- Project 1 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div class="z-10 sm:col-span-8">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-accent focus-visible:text-accent group/link text-base" href="http://172.233.85.226/dashboard" target="_blank" rel="noreferrer">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span><span data-en="TUSI DPI project" data-ko="TUSI DPI project (eBPF/DPDK 기반 고성능 DPI엔진)">TUSI DPI project</span></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="Next-generation high-performance DPI engine capable of handling tens of millions of concurrent sessions and extreme PPS. Redesigned legacy zero-copy packet engines using modern eBPF/DPDK architectures. It streams raw low-level feature sets to AI pipelines in real-time. A critical sub-task involved leveraging Machine Learning to accurately classify YouTube video streaming versus regular web traffic under complete encryption (ECH / Encrypted Client Hello), relying entirely on metadata like packet lengths and IAT." data-ko="수천만 세션과 높은 PPS를 처리하는 차세대 고성능 DPI 엔진. 과거 드라이버 후킹과 Zero-copy 기반으로 직접 구현하던 패킷 수집 엔진을 현대적인 eBPF/DPDK 아키텍처로 재설계했습니다. 추출된 Low-level Feature Set 로그를 AI 머신러닝 모델에 실시간 공급합니다. 특히, ECH(Encrypted Client Hello)로 SNI가 완전 암호화된 환경에서도 패킷 크기와 도달 시간(IAT) 등 메타데이터만으로 YouTube 등 동영상 스트리밍과 일반 웹 트래픽을 정확히 식별하는 연구를 핵심 과제로 수행했습니다.">수천만 세션과 높은 PPS를 처리하는 차세대 고성능 DPI 엔진. 과거 드라이버 후킹과 Zero-copy 기반으로 직접 구현하던 패킷 수집 엔진을 현대적인 eBPF/DPDK 아키텍처로 재설계했습니다. 추출된 Low-level Feature Set 로그를 AI 머신러닝 모델에 실시간 공급합니다. 특히, ECH(Encrypted Client Hello)로 SNI가 완전 암호화된 환경에서도 패킷 크기와 도달 시간(IAT) 등 메타데이터만으로 YouTube 등 동영상 스트리밍과 일반 웹 트래픽을 정확히 식별하는 연구를 핵심 과제로 수행했습니다.</span>
+                    </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">eBPF/DPDK</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">nDPI</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Machine-Learning</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">QUIC/TLS 1.3</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">ECH</div></li>
+                    </ul>
+                    <div class="mt-4">
+                      <div onclick="document.getElementById('tusi-details').classList.toggle('hidden'); const svg = document.getElementById('tusi-svg'); if(svg) svg.style.transform = svg.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)'; " class="group/btn inline-flex cursor-pointer items-center text-xs font-bold uppercase tracking-widest text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 transition-colors" style="background: transparent; border: none; padding: 0;">
+                        <span data-en="More Detail" data-ko="자세히 보기">More Detail</span>
+                        <svg id="tusi-svg" class="transition-all duration-300 group-hover/btn:translate-y-1" style="margin-left: 0.375rem; width: 0.875rem; height: 0.875rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                      </div>
+                      <div id="tusi-details" class="hidden mt-4 rounded border p-4 transition-all" style="border-color: rgba(51, 65, 85, 0.5); background-color: rgba(30, 41, 59, 0.3);">
+                        <div class="flex items-center justify-between" style="margin-bottom: 0.75rem;">
+                          <span class="text-xs font-medium text-slate-300"><span data-en="Live Dashboard" data-ko="라이브 대시보드 데모">Live Dashboard</span></span>
+                          <a href="http://172.233.85.226/dashboard" target="_blank" rel="noreferrer" class="inline-flex items-center text-xs font-medium text-teal-300 hover:text-teal-400">
+                            <span data-en="Open in new tab" data-ko="새 창으로 열기">Open in new tab</span>
+                            <svg style="margin-left: 0.25rem; width: 0.75rem; height: 0.75rem;" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                          </a>
+                        </div>
+                        <a href="http://172.233.85.226/dashboard" target="_blank" rel="noreferrer" class="block overflow-hidden rounded-lg border shadow-lg transition-all hover:border-teal-300/50" style="border-color: rgba(51, 65, 85, 0.5);">
+                          <img src="images/tusi_ui.png" alt="TUSI Dashboard Demo" class="w-full object-cover grayscale transition hover:grayscale-0" style="width: 100%;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjI1MCIgZmlsbD0iIzMzMyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSIjNzc3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW1hZ2UgTm90IEZvdW5kPC90ZXh0Pjwvc3ZnPg==';">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 2 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div class="z-10 sm:col-span-8">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-accent focus-visible:text-accent group/link text-base" href="#">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span><span data-en="RaconFlow" data-ko="RaconFlow (실시간 온디바이스 AI 통역 엔진)">RaconFlow</span></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="An on-device AI real-time translation system designed to eliminate cloud dependencies. Built on a quantized local LLM (Gemma 4-bit), it establishes a highly practical pipeline by finding the optimal trade-off between translation fidelity and response speed for live video conferences. It features a custom offline TTS engine (ROV-TTS), engineered by deeply patching OpenVoice V2 to resolve Korean/Japanese prosody and pronunciation artifacts, supporting 6 languages with real-time voice cloning. By integrating a custom RAG pipeline, it dynamically injects domain-specific knowledge from user-provided documents or glossaries directly into live translations. Complete with an interactive overlay UI, it is a fully offline, standalone Windows AI application representing a robust fusion of local ML and low-latency system engineering." data-ko="클라우드 종속성 없이 동작하는 온디바이스 AI 동시통역 시스템입니다. 화상회의 등 실시간 서비스에 적용하기 위해, 경량화된 로컬 모델(Gemma 4-bit)을 기반으로 번역 품질과 응답 속도 간의 최적의 타협점을 찾아 실용적인 파이프라인을 구축했습니다. 특히 기존 OpenVoice V2 엔진의 한국어/일본어 운율 및 발음 왜곡 문제를 자체적으로 패치하여 고도화한 ROV-TTS 엔진을 탑재, 6개 국어 지원 및 화자 음성 복제(Voice Cloning)를 오프라인 환경에서 구현했습니다. 자체적인 RAG 파이프라인을 구축하여, 실시간 통역 시 사용자가 첨부한 문서나 전문 용어집 등의 도메인 지식을 즉각적으로 반영합니다. 게임이나 화상회의 화면 위에 띄울 수 있는 오버레이 UI를 함께 지원하는 독립형 윈도우 AI 애플리케이션입니다.">클라우드 종속성 없이 동작하는 온디바이스 AI 동시통역 시스템입니다. 화상회의 등 실시간 서비스에 적용하기 위해, 경량화된 로컬 모델(Gemma 4-bit)을 기반으로 번역 품질과 응답 속도 간의 최적의 타협점을 찾아 실용적인 파이프라인을 구축했습니다. 특히 기존 OpenVoice V2 엔진의 한국어/일본어 운율 및 발음 왜곡 문제를 자체적으로 패치하여 고도화한 ROV-TTS 엔진을 탑재, 6개 국어 지원 및 화자 음성 복제(Voice Cloning)를 오프라인 환경에서 구현했습니다. 자체적인 RAG 파이프라인을 구축하여, 실시간 통역 시 사용자가 첨부한 문서나 전문 용어집 등의 도메인 지식을 즉각적으로 반영합니다. 게임이나 화상회의 화면 위에 띄울 수 있는 오버레이 UI를 함께 지원하는 독립형 윈도우 AI 애플리케이션입니다.</span>
+                    </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Local-LLM(Gemma)</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">ROV-TTS</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">RAG</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Python</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Electron/Vue3</div></li>
+                    </ul>
+                    <div class="mt-4">
+                      <div onclick="document.getElementById('racon-details').classList.toggle('hidden'); const svg = document.getElementById('racon-svg'); if(svg) svg.style.transform = svg.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)'; " class="group/btn inline-flex cursor-pointer items-center text-xs font-bold uppercase tracking-widest text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 transition-colors" style="background: transparent; border: none; padding: 0;">
+                        <span data-en="More Detail" data-ko="자세히 보기">More Detail</span>
+                        <svg id="racon-svg" class="transition-all duration-300 group-hover/btn:translate-y-1" style="margin-left: 0.375rem; width: 0.875rem; height: 0.875rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                      </div>
+                      <div id="racon-details" class="hidden mt-4 rounded border p-4 transition-all" style="border-color: rgba(51, 65, 85, 0.5); background-color: rgba(30, 41, 59, 0.3);">
+                        <div class="flex items-center justify-between" style="margin-bottom: 0.75rem;">
+                          <span class="text-xs font-medium text-slate-300"><span data-en="UI Screenshot" data-ko="RaconFlow UI">UI Screenshot</span></span>
+                        </div>
+                        <div class="block overflow-hidden rounded-lg border shadow-lg transition-all hover:border-teal-300/50" style="border-color: rgba(51, 65, 85, 0.5);">
+                          <img src="images/racon.png" alt="RaconFlow UI" class="w-full object-cover grayscale transition hover:grayscale-0" style="width: 100%;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjI1MCIgZmlsbD0iIzMzMyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSIjNzc3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW1hZ2UgTm90IEZvdW5kPC90ZXh0Pjwvc3ZnPg==';">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 3 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div class="z-10 sm:col-span-8">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-accent focus-visible:text-accent group/link text-base" href="#">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span><span data-en="KeyVox" data-ko="KeyVox (음성 구동 단축키 에이전트)">KeyVox</span></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="A Push-to-Talk, STT-based voice-driven macro and hotkey automation agent. By holding a designated hotkey, speaking a command (n-Gram), and releasing the key, the system immediately executes OS-level commands. Because the system strictly requires ultra-low latency and near-perfect accuracy, I engineered a custom LoRA model by fine-tuning Whisper on a predefined set of ~100 commands. By intentionally trading generalized performance for slight overfitting within this restricted domain, the model achieves over 99% accuracy and zero-delay responsiveness. Highly optimized to run efficiently on low-resource CPU environments without relying on GPU acceleration, establishing a highly practical pipeline for everyday automation tasks." data-ko="Push-to-Talk 방식의 STT 기반 음성 구동형 매크로/단축키 자동화 에이전트입니다. 지정된 단축키를 누른 상태에서 음성 명령(n-Gram)을 말하고 키를 떼면, 즉시 해당 OS 명령(예: '제어판' 실행)이 수행되도록 설계했습니다. 이 시스템은 극단적으로 빠른 인식 속도와 높은 정확도를 요구합니다. 이를 위해 Whisper 모델에 100여 개의 사전 정의된 커맨드셋을 미세조정(Fine-tuning)하여 전용 LoRA 모델을 구축했습니다. 도메인 한정적인 용도이므로 약간의 과적합(Overfitting)을 허용하는 대신, 99% 이상의 압도적인 인식률과 지연 없는 반응 속도를 얻어냈습니다. 특히 GPU 없이 적은 CPU 연산 리소스만으로 동작할 수 있도록 최적화하여, 실무 환경에서 매우 실용적으로 활용 가능한 파이프라인입니다.">Push-to-Talk 방식의 STT 기반 음성 구동형 매크로/단축키 자동화 에이전트입니다. 지정된 단축키를 누른 상태에서 음성 명령(n-Gram)을 말하고 키를 떼면, 즉시 해당 OS 명령(예: '제어판' 실행)이 수행되도록 설계했습니다. 이 시스템은 극단적으로 빠른 인식 속도와 높은 정확도를 요구합니다. 이를 위해 Whisper 모델에 100여 개의 사전 정의된 커맨드셋을 미세조정(Fine-tuning)하여 전용 LoRA 모델을 구축했습니다. 도메인 한정적인 용도이므로 약간의 과적합(Overfitting)을 허용하는 대신, 99% 이상의 압도적인 인식률과 지연 없는 반응 속도를 얻어냈습니다. 특히 GPU 없이 적은 CPU 연산 리소스만으로 동작할 수 있도록 최적화하여, 실무 환경에서 매우 실용적으로 활용 가능한 파이프라인입니다.</span>
+                    </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Python</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Whisper</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">LoRA / Fine-tuning</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Automation</div></li>
+                    </ul>
+                    <div class="mt-4">
+                      <div onclick="document.getElementById('keyvox-details').classList.toggle('hidden'); const svg = document.getElementById('keyvox-svg'); if(svg) svg.style.transform = svg.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)'; " class="group/btn inline-flex cursor-pointer items-center text-xs font-bold uppercase tracking-widest text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 transition-colors" style="background: transparent; border: none; padding: 0;">
+                        <span data-en="More Detail" data-ko="자세히 보기">More Detail</span>
+                        <svg id="keyvox-svg" class="transition-all duration-300 group-hover/btn:translate-y-1" style="margin-left: 0.375rem; width: 0.875rem; height: 0.875rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                      </div>
+                      <div id="keyvox-details" class="hidden mt-4 rounded border p-4 transition-all" style="border-color: rgba(51, 65, 85, 0.5); background-color: rgba(30, 41, 59, 0.3);">
+                        <div class="flex items-center justify-between" style="margin-bottom: 0.75rem;">
+                          <span class="text-xs font-medium text-slate-300"><span data-en="UI Screenshot" data-ko="KeyVox UI">UI Screenshot</span></span>
+                        </div>
+                        <div class="block overflow-hidden rounded-lg border shadow-lg transition-all hover:border-teal-300/50" style="border-color: rgba(51, 65, 85, 0.5);">
+                          <img src="images/keyvox.png" alt="KeyVox UI" class="w-full object-cover grayscale transition hover:grayscale-0" style="width: 100%;" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjI1MCIgZmlsbD0iIzMzMyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmaWxsPSIjNzc3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW1hZ2UgTm90IEZvdW5kPC90ZXh0Pjwvc3ZnPg==';">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 4 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div class="z-10 sm:col-span-8">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-accent focus-visible:text-accent group/link text-base" href="#">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span><span data-en="ROV-TTS" data-ko="ROV-TTS (Revised version of OpenVoice v2)">ROV-TTS</span></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="A high-performance Text-to-Speech engine engineered by deeply modifying the OpenVoice v2 framework. While retaining its lightweight footprint and zero-shot voice cloning capabilities, I entirely overhauled the severely flawed Korean and Japanese normalization pipelines. For Korean, I integrated a g2pk-based normalizer alongside a 130K-word IT domain lexicon, utilizing an O(1) in-memory architecture to completely eliminate latency for mixed-language and complex vocabulary. For Japanese, I implemented adversarial spelling regex patches to bypass critical acoustic corruption bugs native to the original model. Furthermore, I resolved a fatal Windows deployment issue—namespace collisions between Python morphological analyzers—by migrating the Japanese backend to `fugashi`. This resulted in a robust, dependency-free, one-click installation architecture." data-ko="OpenVoice v2 프레임워크를 심층 개조한 고성능 텍스트-음성 변환 엔진입니다. 가벼운 리소스와 음성 복제(Voice Cloning) 기능이라는 원본의 장점은 유지하면서, 한국어와 일본어 파이프라인의 일부 결함들을 완전히 수정했습니다. 한국어 처리를 위해 g2pk 기반 정규화 엔진을 도입하고, 파이프라인 메모리에 O(1) 속도로 즉시 로드되는 13만 단어 규모의 IT 특화 사전을 구축하여 복합어와 영문 혼용 어휘의 발음 지연을 없앴습니다. 일본어 파이프라인에서는 원본 특유의 음향 뭉개짐 오류를 우회하는 적대적 스펠링(Adversarial Spelling) 정규식을 적용했습니다. 더 나아가, 윈도우 환경 설치 시 발생하던 파이썬 형태소 분석기 간의 네임스페이스 충돌을 fugashi 래퍼로 교체하여 원천 차단함으로써, 플랫폼 제약 없는 배포 아키텍처로 수정했습니다.">OpenVoice v2 프레임워크를 심층 개조한 고성능 텍스트-음성 변환 엔진입니다. 가벼운 리소스와 음성 복제(Voice Cloning) 기능이라는 원본의 장점은 유지하면서, 한국어와 일본어 파이프라인의 일부 결함들을 완전히 수정했습니다. 한국어 처리를 위해 g2pk 기반 정규화 엔진을 도입하고, 파이프라인 메모리에 O(1) 속도로 즉시 로드되는 13만 단어 규모의 IT 특화 사전을 구축하여 복합어와 영문 혼용 어휘의 발음 지연을 없앴습니다. 일본어 파이프라인에서는 원본 특유의 음향 뭉개짐 오류를 우회하는 적대적 스펠링(Adversarial Spelling) 정규식을 적용했습니다. 더 나아가, 윈도우 환경 설치 시 발생하던 파이썬 형태소 분석기 간의 네임스페이스 충돌을 fugashi 래퍼로 교체하여 원천 차단함으로써, 플랫폼 제약 없는 배포 아키텍처로 수정했습니다.</span>
+                    </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Python</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Voice-Cloning</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">NLP</div></li>
+                      <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent leading-5">Fugashi / g2pk</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 5: Past Major Projects -->
+              <li class="mb-12 mt-20 border-t border-slate-800/50 pt-12">
+                <div class="relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                  <!-- Background hover effect removed for legacy section -->
+                  <div class="z-10 sm:col-span-8">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">
+                          <span><span data-en="Past Projects" data-ko="과거 프로젝트들">Past Projects</span></span>
+                        </span>
+                      </div>
+                    </h3>
+                    <div class="mt-4 flex flex-col gap-4 text-sm leading-normal text-slate-400">
+                      <!-- Web Proxy -->
+                      <div>
+                        <h4 class="font-semibold text-slate-300">Web Proxy (Cache)</h4>
+                        <ul class="mt-2 flex flex-col gap-1 list-inside list-disc">
+                          <li>
+                            <span data-en="High-performance storage-optimized web proxy cache engine." data-ko="스토리지 최적화 기반의 고성능 웹 프록시 캐시 엔진">스토리지 최적화 기반의 고성능 웹 프록시 캐시 엔진</span>
+                          </li>
+                          <li>
+                            <span data-en="Video media cache system for CDN services." data-ko="CDN 서비스용 동영상 미디어 캐시 시스템">CDN 서비스용 동영상 미디어 캐시 시스템</span>
+                          </li>
+                          <li>
+                            <span data-en="Mobile edge cache system deployed in 4G (LTE) base stations." data-ko="4G(LTE) 기지국에 설치되는 모바일 엣지 캐시(Mobile Edge Cache)">4G(LTE) 기지국에 설치되는 모바일 엣지 캐시(Mobile Edge Cache)</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- DPI -->
+                      <div>
+                        <h4 class="font-semibold text-slate-300">DPI (Deep Packet Inspection)</h4>
+                        <ul class="mt-2 flex flex-col gap-1 list-inside list-disc">
+                          <li>
+                            <span data-en="High-performance unidirectional DPI engine designed for deep packet filtering." data-ko="네트워크 패킷 필터링을 위한 단방향 고성능 DPI 엔진">네트워크 패킷 필터링을 위한 단방향 고성능 DPI 엔진</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- AI -->
+                      <div>
+                        <h4 class="font-semibold text-slate-300">AI & Machine Learning</h4>
+                        <ul class="mt-2 flex flex-col gap-1 list-inside list-disc">
+                          <li>
+                            <span data-en="Online handwritten gesture recognition engine." data-ko="온라인 필기(Hand-written) 제스처 인식 엔진">온라인 필기(Hand-written) 제스처 인식 엔진</span>
+                          </li>
+                          <li>
+                            <span data-en="Automated web page category classification database construction using AI." data-ko="AI를 활용한 웹페이지 자동 카테고리 분류 데이터베이스 구축">AI를 활용한 웹페이지 자동 카테고리 분류 데이터베이스 구축</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-onyx/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200"><span data-en="Experience" data-ko="주요 경력">Experience</span></h2>
+          </div>
+          <div>
+            <h3 class="hidden lg:block text-sm font-bold uppercase tracking-widest text-slate-200 mb-6"><span data-en="Experience" data-ko="주요 경력">Experience</span></h3>
+            <ol class="group/list">
+              <!-- Experience 1 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="2025 to Present">
+                    2025 — Present
+                  </header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">
+                          <span><span data-en="Independent Developer" data-ko="개인 개발자 (Independent Developer)">Independent Developer</span></span>
+                        </span>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="Focusing on independent software development, specializing in AI-driven applications, high-performance optimization, and system architecture." data-ko="독립적인 소프트웨어 개발에 집중하며, AI 기반 애플리케이션 개발, 고성능 최적화 및 시스템 아키텍처 설계에 주력하고 있습니다.">독립적인 소프트웨어 개발에 집중하며, AI 기반 애플리케이션 개발, 고성능 최적화 및 시스템 아키텍처 설계에 주력하고 있습니다.</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Experience 2 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="2022 to 2025">
+                    2022 — 2025
+                  </header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">
+                          <span><span data-en="Tech Advisor · SecureWay Tech (UAE)" data-ko="기술 자문 · SecureWay Tech (UAE)">Tech Advisor · SecureWay Tech (UAE)</span></span>
+                        </span>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="Provided expert technical consulting on high-performance networking and AI technology implementations for overseas enterprises." data-ko="해외 현지 기업을 대상으로 네트워크 최적화 및 최신 AI 기술 도입에 관한 전문 기술 자문을 수행했습니다.">Provided expert technical consulting on high-performance networking and AI technology implementations for overseas enterprises.</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Experience 3 -->
+              <li class="mb-12">
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="1999 to 2021">
+                    1999 — 2021
+                  </header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">
+                          <span><span data-en="Founder & CEO · AraNetworks" data-ko="창업자 및 대표이사 · (주)아라기술">Founder & CEO · AraNetworks</span></span>
+                        </span>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal text-slate-400">
+                      <span data-en="Founded and operated the IT venture for over 20 years, overseeing core technology commercialization. Developed a high-performance WebCache and successfully exported to global giants like Telefónica, NTT Communications, Huawei, and HP. Led SOTA benchmark records and LTE EdgeCache development." data-ko="20년 이상 IT 벤처기업을 운영하며 기술 사업화를 총괄했습니다. 고성능 WebCache를 개발하여 스페인 Telefónica, 일본 NTT, 중국 Huawei, HP 등 글로벌 통신사 및 기업에 공급했습니다. 2000-2001년 미국 WebCache 벤치마크 SOTA 2회 달성, LTE 모바일망용 EdgeCache 등을 성공적으로 개발 및 납품했습니다.">20년 이상 IT 벤처기업을 운영하며 기술 사업화를 총괄했습니다. 고성능 WebCache를 개발하여 스페인 Telefónica, 일본 NTT, 중국 Huawei, HP 등 글로벌 통신사 및 기업에 공급했습니다. 2000-2001년 미국 WebCache 벤치마크 SOTA 2회 달성, LTE 모바일망용 EdgeCache 등을 성공적으로 개발 및 납품했습니다.</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              
+            </ol>
+            
+            <div id="education" class="mt-12 mb-8 scroll-mt-16 lg:scroll-mt-24">
+              <h3 class="text-sm font-bold uppercase tracking-widest text-slate-200 mb-6"><span data-en="Education" data-ko="학력">Education</span></h3>
+              <ol class="group/list">
+                <li class="mb-6">
+                  <div class="grid sm:grid-cols-8 sm:gap-8 md:gap-4">
+                    <header class="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                      1990 — 1999
+                    </header>
+                    <div class="sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <span data-en="KAIST (Korea Advanced Institute of Science and Technology)" data-ko="KAIST (한국과학기술원)">KAIST (Korea Advanced Institute of Science and Technology)</span>
+                      </h3>
+                      <p class="mt-1 text-sm text-slate-400"><span data-en="Ph.D. Coursework (Database Lab) & M.S. in Computer Science (AI Lab)" data-ko="전산학과 박사 수료 (데이터베이스 연구실) 및 석사 졸업 (인공지능 연구실)">Ph.D. Coursework (Database Lab) & M.S. in Computer Science (AI Lab)</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-6">
+                  <div class="grid sm:grid-cols-8 sm:gap-8 md:gap-4">
+                    <header class="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                      1986 — 1990
+                    </header>
+                    <div class="sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <span data-en="Korea University" data-ko="고려대학교">Korea University</span>
+                      </h3>
+                      <p class="mt-1 text-sm text-slate-400"><span data-en="B.S. in Computer Science" data-ko="이과대학 전산과학과 학사 졸업">B.S. in Computer Science</span></p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+          </div>
+        </section>
+        
+
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
